@@ -14,8 +14,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 1);
-  padding: 0 50px;
+  background-color: $white-color;
+  padding: $container-padding;
 }
 
 .image {
@@ -39,13 +39,13 @@ body {
     line-height: 60px;
     font-size: 12px;
     position: relative;
-    color: #060b35;
+    color: $color-card-title;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 300ms ease;
+    transition: color $transition-standard;
 
-    &:not(.is-active):hover {
-      color: #00acdc;
+    &:not(.nav__link--is-active):hover {
+      color: $blue-color;
     }
 
     &--is-active {
@@ -58,13 +58,13 @@ body {
         height: 4px;
         bottom: 0;
         left: 0;
-        border-radius: 8px;
+        border-radius: $border-radius-lg;
         background-color: $blue-color;
       }
     }
   }
 
-  [data-qa='nav-hover'] {
+  .nav__link[data-qa='nav-hover'] {
     color: $blue-color;
   }
 }
