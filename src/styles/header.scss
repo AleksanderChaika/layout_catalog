@@ -44,7 +44,7 @@ body {
     text-transform: uppercase;
     transition: color $transition-standard;
 
-    &:not(.nav__link--is-active):hover {
+    &.nav__link:not(.nav__link--is-active):hover {
       color: $blue-color;
     }
 

@@ -40,8 +40,8 @@ body {
     padding: $card-padding;
     box-sizing: border-box;
     transition:
-    transform $transition-standard,
-    box-shadow $transition-standard;
+      transform $transition-standard,
+      box-shadow $transition-standard;
 
     &:hover {
       transform: scale(1.2);
